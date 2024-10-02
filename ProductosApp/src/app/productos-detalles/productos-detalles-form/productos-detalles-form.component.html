@@ -1,0 +1,31 @@
+<form #form="ngForm" (submit)="onSubmit(form)"
+[class.submitted]="service.formSubmitted" novalidate autocomplete="off">
+    <input type="hidden" name="productoId" value="service.formData.productoId">
+    <div class="mb-3">
+        <label>Nombre del producto</label>
+        <input class="form-control form-control-lg" placeholder="Ingresar producto"
+        #nombre="ngModel" name="nombre"
+        [(ngModel)]="service.formData.nombre" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Precio</label>
+        <input class="form-control form-control-lg" placeholder="Ingresar precio"
+        #precio="ngModel" name="precio"
+        [(ngModel)]="service.formData.precio" required>
+    </div> 
+
+    <div class="mb-3">
+        <label>Stock</label>
+        <input class="form-control form-control-lg" placeholder="Ingresar stock"
+        #stock="ngModel" name="stock"
+        [(ngModel)]="service.formData.stock" required>
+    </div>
+       
+    <div class="row">
+            <button class="btn btn-md btn-success" type="submit">
+                Enviar
+            </button>  
+    </div>
+
+</form>

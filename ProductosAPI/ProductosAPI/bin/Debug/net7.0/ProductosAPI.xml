@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductosAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ProductosAPI.Controllers.AuthController.Register(ProductosAPI.Dtos.RegisterDto)">
+            <summary>
+            Registra un nuevo usuario.
+            </summary>
+            <response code="200">OK. Usuario registrado correctamente.</response>
+        </member>
+        <member name="M:ProductosAPI.Controllers.AuthController.Login(ProductosAPI.Dtos.LoginDto)">
+            <summary>
+            Inicia sesión el usuario registrado.
+            </summary>
+            <response code="200">OK. Acceso exitoso.</response>
+        </member>
+        <member name="M:ProductosAPI.Controllers.AuthController.User">
+            <summary>
+            Muestra info del usuario que ha iniciado sesión.
+            </summary>
+            <response code="200">OK. Se muestra el usuario logueado.</response>
+        </member>
+        <member name="M:ProductosAPI.Controllers.AuthController.Logout">
+            <summary>
+            Cierra sesión el usuario logueado.
+            </summary>
+            <response code="200">OK. Sesión cerrada.</response>
+        </member>
+        <member name="M:ProductosAPI.Controllers.ProductoDetalleController.GetProductoDetalles">
+            <summary>
+            Obtiene todos los productos.
+            </summary>
+            <response code="200">OK. Devuelve todos los productos.</response>     
+        </member>
+        <member name="M:ProductosAPI.Controllers.ProductoDetalleController.GetProductoDetalle(System.Int32)">
+            <summary>
+            Obtiene el detalle de un producto en específico.
+            </summary>
+            <param name="id">ID del producto a consultar.</param>             
+            <response code="200">OK. Devuelve el producto solicitado.</response>          
+        </member>
+        <member name="M:ProductosAPI.Controllers.ProductoDetalleController.PutProductoDetalle(System.Int32,ProductosAPI.Models.ProductoDetalle)">
+            <summary>
+            Actualiza un producto en específico.
+            </summary>
+            <param name="id">ID del producto a actualizar.</param>
+            <param name="productoDetalle">Objeto de tipo ProductoDetalle a actualizar.</param>
+            <response code="200">OK. El producto fue actualizado correctamente.</response>
+        </member>
+        <member name="M:ProductosAPI.Controllers.ProductoDetalleController.PostProductoDetalle(ProductosAPI.Models.ProductoDetalle)">
+            <summary>
+            Agrega un nuevo producto.
+            </summary>
+            <param name="productoDetalle">Objeto de tipo ProductoDetalle a agregar.</param>
+            <response code="200">OK. El producto fue agregado correctamente.</response>
+        </member>
+        <member name="M:ProductosAPI.Controllers.ProductoDetalleController.DeleteProductoDetalle(System.Int32)">
+            <summary>
+            Elimina un producto en específico.
+            </summary>
+            <param name="id">ID del producto a eliminar.</param>
+            <response code="200">OK. El producto fue eliminado correctamente.</response>
+        </member>
+        <member name="T:ProductosAPI.Migrations.PrimeraMigracion">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductosAPI.Migrations.PrimeraMigracion.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductosAPI.Migrations.PrimeraMigracion.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductosAPI.Migrations.PrimeraMigracion.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ProductosAPI.Migrations.User.SegundaMigracion">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductosAPI.Migrations.User.SegundaMigracion.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductosAPI.Migrations.User.SegundaMigracion.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductosAPI.Migrations.User.SegundaMigracion.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
